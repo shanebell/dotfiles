@@ -1,0 +1,13 @@
+#
+# This is an example for the global screenrc file.
+# You may want to install this file as /usr/local/etc/screenrc.
+# Check config.h for the exact location.
+#
+# Flaws of termcap and standard settings are done here.
+#
+
+startup_message off
+defscrollback 5000
+caption always '%3n - %t'
+shell -/bin/bash
+
