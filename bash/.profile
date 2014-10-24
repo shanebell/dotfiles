@@ -5,6 +5,7 @@ export MVN_HOME=/usr/local/apache-maven-3.1.1
 export BREW_HOME=$(brew --prefix)
 export GEM_HOME=$(brew --prefix)
 export ES_HOME=/usr/local/elasticsearch-1.2.2
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # add to the path
 export PATH=$BREW_HOME/opt/ruby/bin:$BREW_HOME/bin:$MVN_HOME/bin:$GRAILS_HOME/bin:$PATH:$AWS_IAM_HOME/bin:$ES_HOME/bin
