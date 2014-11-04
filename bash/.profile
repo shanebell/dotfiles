@@ -45,3 +45,4 @@ export PS1='\w$(__git_ps1 " (%s)")\$ '
 
 # aliases
 alias ls='ls -F'
+alias say='say -v Zarvox'
