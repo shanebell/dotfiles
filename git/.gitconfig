@@ -5,6 +5,7 @@
 	ui = true
 [alias]
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	summary = log --author='shane.bell@gmail.com' --pretty=format:'%cd  %h  %s' 
 [core]
 	excludesfile = /Users/shane/.gitignore
 	autocrlf = input
