@@ -45,4 +45,23 @@ export PS1='\w$(__git_ps1 " (%s)")\$ '
 
 # aliases
 alias ls='ls -F'
-alias say='say -v Zarvox'
+
+# Say $1 if the most recently executed command returns an exit code of zero, otherwise say $2
+# usage: <some command>; message "Say this on success" "Say this on failure"
+function message() {
+  
+  # get the exit code of the most recently executed command
+  export EXIT_CODE=$?
+
+  # check args
+  if [ $# -ne 2 ]; then
+    echo "usage: message success_message failure_message"
+    return -1
+  fi
+
+  if [ $EXIT_CODE -eq 0 ]; then
+    say -v Zarvox $1
+  else
+    say -v Zarvox $2
+  fi
+}
